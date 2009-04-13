@@ -1,0 +1,17 @@
+config/yilp_appid.yml
+lib/yilp.rb
+Manifest
+Rakefile
+README.rdoc
+spec/fixtures/places_sydney.xml
+spec/fixtures/placetypes.xml
+spec/fixtures/woid_1105779.xml
+spec/fixtures/woid_1105779_ancestors.xml
+spec/fixtures/woid_1105779_belongto.xml
+spec/fixtures/woid_1105779_children.xml
+spec/fixtures/woid_1105779_neighbors.xml
+spec/fixtures/woid_1105779_parent.xml
+spec/fixtures/woid_1105779_siblings.xml
+spec/specs.html
+spec/yilp_spec.rb
+yilp.gemspec
