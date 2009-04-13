@@ -1,0 +1,29 @@
+In simple terms, the Service allows you to look up the unique identifier - called the Where on Earth ID, or WOEID - for
+almost any named place on the Earth; it also allows you to resolve a WOEID you have received from a third party - such as
+Fire Eagle™ or Upcoming - to the place it represents.
+
+The API is accessed via HTTP GET; the following examples can be cut-and-paste into a web browser to view the results:
+
+Find the WOEID of a significant landmark:
+http://where.yahooapis.com/v1/places.q('sydney%20opera%20house')
+
+Resolve a WOEID to a place:
+http://where.yahooapis.com/v1/place/2507854
+
+Find the WOEID of a specific place:
+http://where.yahooapis.com/v1/places.q('northfield%20mn%20usa')
+
+Obtain a range of WOEIDs that match a given place, ordered by the most likely:
+http://where.yahooapis.com/v1/places.q('springfield');start=0;count=5
+
+Find the parent of a given WOEID (and return a detailed record):
+http://where.yahooapis.com/v1/place/638242/parent?select=long
+
+Return the Placename for a given WOEID in a specific language (where it exists):
+http://where.yahooapis.com/v1/places.q('usa')?lang=fr
+
+To obtain the representation of a place in JSON format:
+http://where.yahooapis.com/v1/place/2487956?format=json
+
+To obtain a list of geographies that neighbor a specific WOEID:
+http://where.yahooapis.com/v1/place/12795711/neighbors
